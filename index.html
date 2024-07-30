@@ -10,11 +10,6 @@
             padding: 0;
             background-color: #c8d2d9;
         }
-        .header {
-            background-color: #333;
-            text-align: center;
-            padding: 20px;
-        }
         .nav {
             display: flex;
             justify-content: space-around;
@@ -93,7 +88,7 @@
     display: inline-block;
     margin-right: 10px;
 }
-        .video-container {
+ .video-container {
   display: flex;
 }
 .item {
@@ -118,6 +113,22 @@
 }
 .why:hover {
     background-color: #f0f0f0;
+}
+        @media (max-width: 600px) {
+    .nav {
+        flex-direction: column; /* 在小屏幕上导航栏变为堆叠式 */
+    }
+    .nav a {
+        width: 100%; /* 占满宽度，使链接在小屏幕上更易点击 */
+        text-align: center; /* 文字居中 */
+    }
+    .main {
+        width: 100%; /* 在小屏幕上，主要内容区域占满宽度 */
+        padding: 10px; /* 减少内边距 */
+    }
+     .video-container {
+        display: inline-block; /* 将链接变为内联块级元素 */
+    }
 }
     </style>
 </head>
